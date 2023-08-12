@@ -1,0 +1,256 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-08-12T19:19:03.666Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3884638000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Homepage - Success go to youtube shorts page",
+        "description": "",
+        "id": "homepage;homepage---success-go-to-youtube-shorts-page",
+        "after": [
+          {
+            "result": {
+              "duration": 217674000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4537739000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user access to \"youtube-homepage\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"youtube-homepage\"",
+                  "offset": 15
+                }
+              ],
+              "location": "steps.HomepageStep.userNavigate(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1720836000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click on youtube shorts menu",
+            "match": {
+              "location": "steps.HomepageStep.userClickShorts()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 151373000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should be at the \"youtube-shorts\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"youtube-shorts\"",
+                  "offset": 22
+                }
+              ],
+              "location": "steps.HomepageStep.userAtShortsPage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@search"
+          },
+          {
+            "name": "@success-access-youtube-short"
+          }
+        ]
+      }
+    ],
+    "name": "Homepage",
+    "description": "",
+    "id": "homepage",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/homepage.feature",
+    "tags": [
+      {
+        "name": "@search",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-08-12T19:19:14.205Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3055822000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Search - Success search and play video",
+        "description": "",
+        "id": "search;search---success-search-and-play-video",
+        "after": [
+          {
+            "result": {
+              "duration": 220903000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 18647607000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user access to \"youtube-homepage\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"youtube-homepage\"",
+                  "offset": 15
+                }
+              ],
+              "location": "steps.HomepageStep.userNavigate(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 620438000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user input search with \"Fokus Populix Jembatani Riset untuk Semua\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Fokus Populix Jembatani Riset untuk Semua\"",
+                  "offset": 23
+                }
+              ],
+              "location": "steps.HomepageStep.userInputKeyword(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2235843000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click search button",
+            "match": {
+              "location": "steps.HomepageStep.useClickSearch()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2468355000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click on \"Fokus Populix Jembatani Riset untuk Semua\" video",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Fokus Populix Jembatani Riset untuk Semua\"",
+                  "offset": 14
+                }
+              ],
+              "location": "steps.HomepageStep.userClickVideo(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 377311000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should be at the \"Fokus Populix Jembatani Riset untuk Semua\" video page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Fokus Populix Jembatani Riset untuk Semua\"",
+                  "offset": 22
+                }
+              ],
+              "location": "steps.HomepageStep.userAtVideoPage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@search"
+          },
+          {
+            "name": "@success-search-and-play-video"
+          }
+        ]
+      }
+    ],
+    "name": "Search",
+    "description": "",
+    "id": "search",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/search.feature",
+    "tags": [
+      {
+        "name": "@search",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
